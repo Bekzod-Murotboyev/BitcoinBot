@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 public class UserDTO {
     private String chatId;
 
+    private String name;
+
     private String username;
 
     private String botState;

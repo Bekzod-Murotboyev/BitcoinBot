@@ -21,6 +21,8 @@ public class User extends BaseEntity {
     @Column(unique = true)
     String username;
 
+    String name;
+
     String botState;
 
     double money;

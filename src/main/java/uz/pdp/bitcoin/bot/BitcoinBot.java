@@ -274,12 +274,12 @@ public class BitcoinBot extends TelegramLongPollingBot implements Constant {
 
     @Override
     public String getBotUsername() {
-        return Url.USERNAME_TEST;
+        return Url.USERNAME;
     }
 
     @Override
     public String getBotToken() {
-        return Url.TOKEN_TEST;
+        return Url.TOKEN;
     }
 
 }

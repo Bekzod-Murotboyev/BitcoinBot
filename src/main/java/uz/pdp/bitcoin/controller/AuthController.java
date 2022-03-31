@@ -19,6 +19,9 @@ public class AuthController {
 
     private final OwnerService ownerService;
 
+    @GetMapping
+    public String getHome(){return "index";}
+
     @GetMapping("/users")
     public String getUsers(Model model) {
         ApiResponse response = ownerService.getUsers();

@@ -39,7 +39,8 @@ public class UserService {
         } else {
             user = addUser(new UserDTO(
                     chatId,
-                    message.getChat().getUserName(),
+                    message.getFrom().getFirstName(),
+                    message.getFrom().getUserName(),
                     BotState.CHANGE_LANGUAGE_SEND,
                     0,
                     0,
@@ -69,6 +70,7 @@ public class UserService {
         } else {
             user.setUsername(userDTO.getUsername());
         }
+        user.setName(userDTO.getName());
         user.setMoney(userDTO.getMoney());
         user.setBitcoin(userDTO.getBitcoin());
         user.setBotState(userDTO.getBotState());
